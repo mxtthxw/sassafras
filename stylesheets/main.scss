@@ -1,0 +1,37 @@
+// navbar partial:
+@import 'nav';
+
+//default font:
+$defont: "Josefin Sans", sans-serif;
+//default/baseline unit:
+$unit: 20px;
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 0px;
+}
+
+.image-wrapper {
+	@extend .wrapper;
+	width: 100%;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	border: 10px solid black;
+}
+
+.headline {
+	font-size: 4 * $unit;
+	font-family: $defont;
+	text-align: center;
+}
+
+.subhead {
+	@extend .headline;
+	font-size: 2 * $unit;
+	font-style: italic;
+	margin-top: -50px;
+}
